@@ -14,6 +14,19 @@ To start the server you can run the following command from within the project ro
 
 `node BackEnd\server.js`
 
+_NOTE_:
+For the backend server to work it needs the connection details of your mysql database. Currently this information can be found in the Server.js file at line 9.
+
+```
+const connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '',
+  database : 'collegedb'
+});
+```
+If your database connection details are different then please edit this file accordingly.
+
 ## Front End
 The front end web application is implemented using React and the initial skeleton of code was created using the utility `Create React App`.
 The source code for the web application is located within the `src` directory and to launch it you can run the command `npm start` from within the project root folder. 
